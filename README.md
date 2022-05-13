@@ -1,4 +1,4 @@
-# Covid19 Tracker
+# Covid19 Statistics
 
 React 17, Chart.js, Leaflet, Scss.
 

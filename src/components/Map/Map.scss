@@ -1,0 +1,48 @@
+.map {
+	background-color: white;
+	height: 400px;
+	padding: 12px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+
+	.leaflet-container {
+		width: 100%;
+		height: 100%;
+	}
+
+	.mapCountryPopup {
+		.mapCountryPopup__country {
+			display: flex;
+			align-items: center;
+			margin-bottom: 2px;
+
+			.flag {
+				margin-right: 4px;
+				img {
+					height: 12px;
+				}
+			}
+			.name {
+				font-size: 12px;
+				font-weight: bold;
+			}
+		}
+		.mapCountryPopup__data {
+			.cases {
+				.circle {
+					color: var(--yellow);
+				}
+			}
+			.recovered {
+				.circle {
+					color: var(--green);
+				}
+			}
+			.deaths {
+				.circle {
+					color: var(--red);
+				}
+			}
+		}
+	}
+}

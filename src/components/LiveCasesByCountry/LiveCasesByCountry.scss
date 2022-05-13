@@ -1,0 +1,30 @@
+.liveCasesByCountry {
+	margin-bottom: 24px;
+
+	.liveCasesByCountry__title {
+		font-size: 24px;
+		margin-bottom: 8px;
+	}
+	.liveCasesByCountry__table {
+		color: #6a5d5d;
+		height: 400px;
+		overflow-y: auto;
+
+		table {
+			width: 100%;
+			tr {
+				display: flex;
+				justify-content: space-between;
+				&:nth-child(odd) {
+					background-color: #f3f2f8;
+				}
+				td {
+					padding: 8px;
+					&:nth-child(2) {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}

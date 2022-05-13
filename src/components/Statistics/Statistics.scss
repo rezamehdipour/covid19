@@ -1,0 +1,76 @@
+.statistics {
+	margin-top: 16px;
+	background-color: white;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+	padding: 12px;
+	margin-bottom: 16px;
+	border-radius: 5px;
+
+	.statistics__subject {
+		margin-bottom: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.statistics__flag {
+			margin-right: 8px;
+			img {
+				height: 25px;
+				border-radius: 5px;
+				border: 1px solid rgba(0, 0, 0, 0.05);
+
+				&.noBorder {
+					border: none;
+				}
+			}
+		}
+
+		.statistics__title {
+			font-size: 32px;
+			text-transform: capitalize;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			.statistics__continent {
+				margin-left: 8px;
+				font-size: 16px;
+			}
+		}
+	}
+
+	.statistics__table {
+		ul {
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+
+			li {
+				display: flex;
+				justify-content: space-around;
+				padding: 12px 0px;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+				&.yellow {
+					background-color: rgba(245, 159, 11, 0.1);
+				}
+				&.green {
+					background-color: rgba(16, 185, 129, 0.1);
+				}
+				&.red {
+					background-color: rgba(220, 38, 38, 0.1);
+				}
+				&.grey {
+					background-color: rgba(128, 128, 128, 0.1);
+				}
+
+				span {
+					flex-basis: 50%;
+					text-align: center;
+
+					&.value {
+						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+}

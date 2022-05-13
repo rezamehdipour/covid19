@@ -1,0 +1,12 @@
+.worldwideStatsCharts {
+	.worldwideStatsCharts__title {
+		font-size: 24px;
+		margin-bottom: 4px;
+	}
+	.worldwideStatsCharts__chart {
+		margin-bottom: 16px;
+		&:nth-last-child(1) {
+			margin-bottom: 0px;
+		}
+	}
+}

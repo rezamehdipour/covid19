@@ -1,0 +1,33 @@
+.header {
+	padding-top: 10px;
+	.header__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.header__logo {
+			cursor: pointer;
+			margin-right: 16px;
+
+			&:hover {
+				transform: scale(1.05);
+			}
+			img {
+				width: 50px;
+			}
+		}
+
+		.header__dropdown {
+			select {
+				cursor: pointer;
+				background-color: white;
+				padding: 5px;
+				width: 100%;
+				max-width: 300px;
+				font-size: 18px;
+				border-radius: 5px;
+				border: 1px solid rgba(0, 0, 0, 0.2);
+			}
+		}
+	}
+}

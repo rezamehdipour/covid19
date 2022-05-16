@@ -22,7 +22,10 @@ const Statistics = (props) => {
 					{covid.flag && <img src={covid.flag} alt={covid.country} />}
 				</div>
 				<div className="statistics__title">
-					{covid.country} <span className="statistics__continent">({covid.continent})</span>
+					{covid.country}{" "}
+					<span className="statistics__continent">
+						{covid.continent ? `(${covid.continent})` : ""}
+					</span>
 				</div>
 			</div>
 			<div className="statistics__table">

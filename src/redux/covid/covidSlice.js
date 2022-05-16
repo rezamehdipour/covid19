@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-	country: 'worldwide',
-	iso: 'worldwide',
+	country: "worldwide",
+	iso: "worldwide",
 	flag: false,
 
 	cases: 0,
@@ -24,14 +24,15 @@ const initialState = {
 	testsPerOneMillion: 0,
 
 	population: 0,
-	continent: 'NAN',
+	continent: "",
 };
 
 export const covidSlice = createSlice({
-	name: 'covid',
+	name: "covid",
 	initialState,
 	reducers: {
-		setCovidInfo: (state, action) => { // action.payload = {country: countryName, flag: flag/false, ....}
+		setCovidInfo: (state, action) => {
+			// action.payload = {country: countryName, flag: flag/false, ....}
 			// const {
 			// 	country = 'worldwide',
 			// 	flag = false,
@@ -48,7 +49,7 @@ export const covidSlice = createSlice({
 			// 	tests = 0,
 			// 	testsPerOneMillion = 0,
 			// 	population = 0,
-			// 	continent = 'NAN'
+			// 	continent = ''
 			// } = action.payload;
 			// for(property in action.payload){
 			// 	if(action.payload[property]){
@@ -57,8 +58,8 @@ export const covidSlice = createSlice({
 			// }
 			return { ...state, ...action.payload };
 		},
-	}
-})
+	},
+});
 
 export const { setCovidInfo } = covidSlice.actions;
 

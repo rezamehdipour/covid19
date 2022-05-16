@@ -78,7 +78,7 @@ const Header = (props) => {
 			// let country = "country" in data ? data.country : "worldwide";
 			// let iso = "countryInfo" in data ? data.countryInfo.iso2 : "worldwide";
 			let flag = "countryInfo" in data ? data.countryInfo.flag : false; //  Flag
-			let continent = "continent" in data ? data.continent : "NAN"; // Continent
+			let continent = "continent" in data ? data.continent : ""; // Continent
 			const result = {
 				// country: country,
 				// iso: iso,
